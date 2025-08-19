@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Alma</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Adicionamos um ID ao container para o JavaScript -->
+    <div class="container" id="container">
+        <!-- Formulário de Registro -->
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Crie sua Conta</h1>
+                <input type="text" placeholder="Nome Completo" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Senha" />
+                <button class="btn">Registrar</button>
+            </form>
+        </div>
+        <!-- Formulário de Login -->
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Login</h1>
+                <input type="email" placeholder="Email ou Usuário" />
+                <input type="password" placeholder="Senha" />
+                <a href="#">Esqueceu sua senha?</a>
+                <button class="btn">Entrar</button>
+            </form>
+        </div>
+        <!-- Painel de Sobreposição (Overlay ) -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <!-- Painel da Esquerda (Chama para o Login) -->
+                <div class="overlay-panel overlay-left">
+                    <h1>Bem-Vindo(a)!</h1>
+                    <p>Insira seus dados e comece sua jornada conosco </p>
+                    <button class="btn ghost" id="signIn">Entrar</button>
+                </div>
+                <!-- Painel da Direita (Chama para o Registro) -->
+                <div class="overlay-panel overlay-right">         
+                    <h1>Bem vindo(a) de Volta!</h1>
+                    <p>Para se manter conectado, por favor, faça o login com suas informações</p>
+                    <button class="btn ghost" id="signUp">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adicionamos o script no final do body -->
+    <script src="./src/javascript.js"></script>
+</body>
+</html>
